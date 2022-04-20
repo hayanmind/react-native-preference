@@ -150,6 +150,7 @@ public class SharedPreferencesDelegate {
                     INSTANCE = new SharedPreferencesDelegate(context);
                     INSTANCE.singlePreference = INSTANCE.gson.fromJson(INSTANCE.getAllPreferences(), HashMap.class);
                     INSTANCE.mContext = context;
+                    INSTANCE.whiteList = new ArrayList<>();
                 }
             }
         }
